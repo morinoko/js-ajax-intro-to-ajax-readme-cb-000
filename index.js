@@ -2,7 +2,7 @@ function getRepositories() {
   const req = new XMLHttpRequest();
 
   req.addEventListener('load', showRepositories);
-  req.open('GET', 'https://api.github.com/users/octocat/repos');
+  req.open('GET', 'https://api.github.com/users/morinoko/repos');
   req.send();
 }
 
@@ -28,7 +28,7 @@ function getCommits(el) {
   const req = new XMLHttpRequest();
   
   req.addEventListener('load', showCommits);
-  req.open('GET', 'https://api.github.com/repos/octocat/' + name + '/commits');
+  req.open('GET', 'https://api.github.com/repos/morinoko/' + name + '/commits');
   req.send();
 }
 

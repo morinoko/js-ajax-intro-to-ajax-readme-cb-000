@@ -12,8 +12,8 @@ function showRepositories() {
   console.log(repos);
 
   const repoList = `<ul>${repos
-    .map(repo => 
-      '<li>' + 
+    .map(repo =>
+      '<li>' +
       repo.name +
       ' - <a href="#" data-repo="' +
       repo.name +

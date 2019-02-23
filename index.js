@@ -8,7 +8,8 @@ function getRepositories() {
 
 function showRepositories() {
   // this = the XMLHttpRequest object that fired the event
-  console.log(this.responseText);
+  let repos = JSON.parse(this.responseText);
+  console.log(repos);
 
   let repoList = "<ul>";
 
